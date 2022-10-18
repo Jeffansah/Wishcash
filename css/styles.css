@@ -513,5 +513,63 @@ section:not(.hero) .button{
     border: 1px solid rgba(0,0,0, 0.1);
 }
 
+/* !FOOTER */
+#footer{
+    text-align: center;
+    padding: 5rem 0 3rem;
+}
+
+.company_data{
+    margin-block: 2rem;
+}
+
+#footer .logo{
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 5.3rem;
+}
+
+.company_description{
+    margin: 2.5rem 0 5rem;
+    line-height: 3rem;
+    font-size: 1.9rem;
+}
+
+.footer_group{
+    margin: 3rem 0 1rem;
+}
+
+.footer_title{
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.footer_group .list{
+    margin: inherit;
+}
+
+.footer_group .list_link{
+    line-height: 4rem;
+    font-size: 1.7rem;
+}
+
+.horizontal_line{
+    margin-block: 3rem;
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.legal_information{
+    font-weight: 500;
+    margin: 0 1.2rem;
+    transition: color 0.5s;
+}
+
+.legal_info a:hover,
+.legal_info a:focus{
+    color: var(--accent-color);
+}
+
 
 
