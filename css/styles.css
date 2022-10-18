@@ -84,14 +84,19 @@ input {
 }
 
 .logo{
+    min-width: 15.5rem;
     margin-right: 10rem;
+    height: auto;
+    display: flex;
+    width: 15%;
 }
 
 .logo-image{
-    min-width: 20px;
     margin-right: 10rem;
-    padding-left: 3rem;
-    width: 26rem;
+    height: auto;
+    display: flex;
+    /*padding-left: 3rem;
+    width: 26rem;*/
 }
 
 .Menu_button{
@@ -102,6 +107,7 @@ input {
     line-height: 1;
     position: relative;
     border: none;
+    display: flex;
 }
 
 .toggle-icon{
@@ -319,7 +325,7 @@ input {
 }
 
 .text_content_paragraph{
-    font-size: 2rem;
+    font-size: 1.74rem;
     line-height: 3rem;
     letter-spacing: 0.005rem;
     margin-block: 2.2rem;
@@ -425,7 +431,7 @@ input {
 }
 
 .card_header img{
-    height: 6rem;
+    height: 5rem;
     margin: 0 auto;
 }
 
@@ -443,7 +449,7 @@ input {
 
 .card_body p{
     line-height: 2.5rem;
-    font-size: 2rem;
+    font-size: 1.74rem;
 }
 
 
@@ -451,18 +457,13 @@ input {
 .why_choose_us{
     padding: 5rem 0;
 }
-.image_content_group{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 13rem;
-}
+
 section:not(.hero) .text_content_group{
     margin: 8rem 0 2rem;
 }
 
 .section_desc{
-    font-size: 1.9rem;
+    font-size: 1.74rem;
     line-height: 2rem;
 }
 
@@ -474,11 +475,7 @@ section:not(.hero) .button{
     margin: 5rem 0 2rem;
 }
 
-.Home_delivery .image_content_group{
-    margin-top: 5rem;
-    margin-right: 42rem;
-    margin-bottom: 0;
-}
+
 /* !HOME DELIVERY */
 .Home_delivery{
     padding: 0 0 10rem;
@@ -487,18 +484,18 @@ section:not(.hero) .button{
 .Home_delivery .section_tagline{
     color: #f9ba45;
 }
+
+.Home_delivery .image_content_group{
+    margin: 0 auto;
+}
 /* !DOWNLOAD OUR APP */
 .download_our_app{
     padding: 5rem 0;
     background-color: var(--section-background-color);
 }
 
-.download_our_app_container .image_content_group{
-    margin:0 auto 0 29.1rem;
-}
-
-.phone_app{
-    margin-left: 9rem;
+.download_our_app_container .image_content_group img{
+    margin:0 auto;
 }
 
 .download_our_app .button_group{
@@ -526,7 +523,6 @@ section:not(.hero) .button{
 #footer .logo{
     display: inline-block;
     margin: 0 auto;
-    margin-left: 5.3rem;
 }
 
 .company_description{
@@ -560,7 +556,11 @@ section:not(.hero) .button{
     border-top: 1px solid rgba(0,0,0,0.05);
 }
 
-.legal_information{
+.copyright_information{
+    line-height: 2.4rem;
+}
+
+.legal_info a{
     font-weight: 500;
     margin: 0 1.2rem;
     transition: color 0.5s;
@@ -571,5 +571,298 @@ section:not(.hero) .button{
     color: var(--accent-color);
 }
 
+/*!MEDIA QUERIES */
+@media  screen and (min-width: 768px) {
+    body{
+        font-size: 1.6rem;
+        
+    }
+
+    .hero{
+        padding: 8rem 0 12rem;
+    }
+
+    .container{
+        max-width: 72rem;
+    }
+
+    .tagline{
+        font-size: inherit;
+    }
+
+    .button_group{
+        justify-content: flex-start;
+    }
+
+    .button{
+        width: 16rem;
+        padding: 1.8rem 2rem;
+    }
+
+    .hero .button{
+        font-size: inherit;
+    }
+
+    .hero .button_transparent{
+        width: 100%
+    }
+
+    .play_icon_image{
+        width: 5rem
+    }
+
+    .text_content_group{
+        text-align: left;
+        padding-left: 5rem;
+    }
+
+    .section_metadata{
+        text-align: left;
+    }
+
+    .What_we_serve .section_metadata{
+        text-align: center;
+    }
+
+    .section_title{
+        font-size: 3.2rem;
+    }
+
+    .card_group{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2.4rem;
+    }
+
+    section:not(.hero) .text_content_group{
+        margin: 10rem 0 2rem;
+    }
+    
+    .download_our_app .text_content_group{
+        margin-top: 8rem !important;
+    }
+
+    .footer_bottom_data{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.4rem;
+    }
+}
 
 
+@media  screen and (min-width: 992px) {
+    
+    .container{
+        max-width: 96rem;
+    }
+
+    .navbar{
+        flex-wrap: nowrap;
+    }
+
+    .Menu_button{
+        display: none;
+    }
+
+    .collapsable_menu{
+        flex-direction: row;
+        max-height: initial !important;
+        overflow: visible !important;
+        transition: none;
+    }
+
+    .collapsable_menu .list{
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .collapsable_menu .list_item{
+        margin: 0 1.6rem;
+    }
+
+    .search_box{
+        margin-top: 0;
+    }
+
+    .hero_container,
+    .Home_delivery_container,
+    .download_our_app_container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.4rem;
+    }
+
+    .card{
+        padding: 4rem 2.6rem;
+        margin: 1rem;
+    }
+
+    .Why_choose_us_container{
+        margin-bottom: 3rem;
+    }
+
+    .Why_choose_us .text_content_group{
+        padding-top: 5rem;
+    }
+
+    .Why_choose_us_container{
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 2.4rem;
+    }
+
+    .Why_choose_us .image_content_group{
+        grid-column: span 7;
+    }
+    .Why_choose_us .text_content_group{
+        grid-column: span 5;
+    }
+
+    .Home_delivery .image_content_group{
+        order: 1;
+    }
+    
+    .download_our_app{
+        padding: 10rem 0;
+    }
+
+    #footer{
+        text-align: left;
+        font-size: 1.4rem;
+    }
+
+    .copyright_information{
+        padding-left: 4.3rem;
+    }
+
+    .footer_top_data{
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 2.4rem;
+    }
+
+    .company_data{
+        grid-column: span 2;
+    }
+
+    #footer .logo{
+        padding-top: 0.8rem;
+    }
+
+    .legal_info{
+        margin-left: auto;
+        padding-right: 4.3rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .container{
+        max-width: 114rem;
+    }
+    
+    .main_title{
+        font-size: 4.2rem;
+        line-height: 8.8rem;
+    }
+
+    section:not(.What_we_serve) section_title{
+        max-width: 90%;
+    }
+    
+    .card_group{
+        max-width: 95rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card{
+        position: relative;
+        z-index: 1;
+    }
+
+    .card::before,
+    .card::after{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: inherit;
+    }
+
+    .card::before{
+        width: calc(100% + 1.5rem);
+        height: calc(100% + 1.5rem);
+        background-color: #2abf2a;
+        transform-origin: top left;
+        transition: transform 0.25s, opacity 0.25s;
+        z-index: -2;
+        opacity: 0;
+    }
+
+    .card::after{
+        width: 100%;
+        height: 100%;
+        background-color: inherit;
+        z-index: -1;
+    }
+
+    .card:hover::before{
+        transform: translate(0.5rem, 0.5rem) rotate(-3deg);
+        opacity: 0.6;
+    }
+
+    .company_data{
+        max-width: 75%;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    .container{
+        max-width: 132rem;
+    }
+
+    .main_title{
+        font-size: 5.7rem;
+    }
+
+    section:not(.hero) .text_content_group{
+        margin: 20rem 0 2rem;
+    }
+
+    .hero .accent_color{
+        font-size: 5rem;
+        font-weight: 500;
+    }
+
+    .section_tagline{
+        font-size: 1.8rem;
+    }
+
+    .section_title{
+        font-size: 3.5rem;
+    }
+
+    .What_we_serve .section_title{
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card_group{
+        max-width: 110rem;
+    }
+
+    .card{
+        padding: 5rem 2.8rem;
+        margin: 2rem;
+    }
+
+    .download_our_app .button{
+        padding-block: 1.8rem;
+        margin-right: 1.4rem;
+        font-weight: 600; 
+    }
+
+    
+}
