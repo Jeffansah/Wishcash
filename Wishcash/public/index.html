@@ -277,5 +277,28 @@
         </div>
     </footer>
     <script src="/js/app.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyA4edetZAU0Wk2H2zwUIym2uE7MXabZO64",
+          authDomain: "wishcash-900.firebaseapp.com",
+          projectId: "wishcash-900",
+          storageBucket: "wishcash-900.appspot.com",
+          messagingSenderId: "234798342779",
+          appId: "1:234798342779:web:0379598b985f477705f8de",
+          measurementId: "G-QE74BY6JYF"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
