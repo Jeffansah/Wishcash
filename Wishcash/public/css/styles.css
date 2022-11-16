@@ -46,6 +46,10 @@ a {
     outline: none;
 }
 
+p{
+    font-family: "Nunito", sans-serif;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -181,9 +185,11 @@ input {
     color: var(--accent-color);
 }
 
-.current_link:not(:focus){
-    color: var(--dark-color-lighter);
+.current_link:focus{
+    color: var(--accent-color);
 }
+
+
 
 .search_box{
     margin-top: 2rem;

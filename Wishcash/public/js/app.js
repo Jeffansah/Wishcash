@@ -16,5 +16,6 @@ menuToggler.addEventListener("click", () => {
         collapsableMenu.style.maxHeight = "0px";
         collapsableMenu.style.overflow = "hidden";
         }
-    });
-  
+
+});
+
